@@ -8,7 +8,7 @@
             style="filter: invert(100%);">
           <div class="address-contact">
             <p>〒000-0000<br>
-              東京都中央区銀座1丁目1番1号<br>
+              No address <br> Welcome, sea of internet!
               <!--<a href="https://motoki-design.co.jp/" target="_blank">https://motoki-design.co.jp/</a>-->
             </p>
           </div>
@@ -36,7 +36,7 @@
               </li>
               <li>
                 <NuxtLink to="/info">
-                  会社情報
+                  運営情報
                 </NuxtLink>
               </li>
               <li>
@@ -55,9 +55,8 @@
           <div class="footer-menu">
             <div class="footer-menu-title font-bold mb-2">関連サービス</div>
             <ul>
-              <li><a href="#" target="_blank" rel="noopener noreferrer">WordPress制作</a></li>
-              <li><a href="#" target="_blank" rel="noopener noreferrer">ブログ</a></li>
-              <li><a href="#" target="_blank" rel="noopener noreferrer">素材販売</a></li>
+              <li><a href="https://blog.clear-lake.net/" target="_blank" rel="noopener noreferrer">ブログ</a></li>
+              <li><a href="https://www.clear-lake.net/" target="_blank" rel="noopener noreferrer">Clear-Lake.Net</a></li>
             </ul>
           </div>
 
@@ -66,7 +65,7 @@
 
       <div class=" footer-bottom">
         <p class="copyright">
-          <span lang="ja">©</span> 2021 ダミー株式会社
+          <span lang="ja">©</span> 2025 透明な湖
         </p>
       </div>
     </div>

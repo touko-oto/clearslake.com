@@ -12,7 +12,7 @@
           <li><nuxt-link to="/about">私たちについて</nuxt-link></li>
           <li><nuxt-link to="/service">サービス</nuxt-link></li>
           <li><nuxt-link to="/news">お知らせ</nuxt-link></li>
-          <li><nuxt-link to="/info">会社情報</nuxt-link></li>
+          <li><nuxt-link to="/info">運営情報</nuxt-link></li>
         </ul>
         <PrimaryButton to="/contact" label="お問い合わせ" :showIcon="false" />
       </nav>

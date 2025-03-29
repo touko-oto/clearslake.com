@@ -4,9 +4,9 @@
 
     <section class="services-section">
       <div class="content">
-        <small>サービス</small>
-        <h2>Services</h2>
-        <p>高速・セキュアなJamstack構成のサイトを提供します。</p>
+        <small>湖</small>
+        <h2>Lake</h2>
+        <p>世界中の湖の場所と写真を提供します。</p>
         <div class="services-grid">
           <div class="service-card" v-for="(service, index) in services" :key="index">
             <div class="service-text">
@@ -23,15 +23,15 @@
 
 <script setup lang="ts">
 definePageMeta({
-  title: '会社概要 | Jamstack構成のWebサイト制作',
-  description: '当社の企業情報や理念をご紹介します。Jamstack技術を駆使した高性能なWebサイト制作でビジネスの成功を支援します。',
+  title: '湖 | 透明な湖',
+  description: '世界中の湖を紹介するサイト。観光スポットの参考になれば幸いです。',
 });
 
 const route = useRoute();
 
 const breadcrumbsArray = [
   {
-    name: 'サービス',
+    name: '湖',
     path: route.path
   }
 ]
@@ -42,12 +42,12 @@ type Service = {
 };
 
 const services: Service[] = [
-  { title: 'サーバー代0円', description: '' },
-  { title: '超高速表示', description: '' },
-  { title: '内部SEO最適化', description: '' },
-  { title: 'アクセス負荷対応', description: '' },
-  { title: '高セキュリティ', description: '' },
-  { title: 'ヘッドレスCMS', description: '' }
+  { title: 'ユーラシア大陸', description: 'アジア圏、オセアニア、ヨーロッパ' },
+  { title: 'アフリカ大陸', description: 'エジプト、ナイジェリア、スーダンなど' },
+  { title: '北アメリカ大陸', description: 'カナダ、アメリカ合衆国、メキシコなど' },
+  { title: '南アメリカ大陸', description: 'アルゼンチン、ブラジル、チリなど' },
+  { title: 'オーストラリア大陸', description: 'オーストラリア' },
+  { title: '日本', description: '日本国内' }
 ];
 </script>
 

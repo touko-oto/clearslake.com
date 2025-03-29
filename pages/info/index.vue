@@ -5,31 +5,23 @@
     <section class="company-info-section">
       <div class="content columns">
         <div class="content-column-left">
-          <small class="ml-[0.2em]">会社情報</small>
-          <h2>COMPANY</h2>
+          <small class="ml-[0.2em]">運営情報</small>
+          <h2>Profile</h2>
         </div>
         <div class="content-column-right">
           <table>
             <tbody>
               <tr>
-                <th>会社名</th>
-                <td>ダミー株式会社</td>
+                <th>名前</th>
+                <td>透湖</td>
               </tr>
               <tr>
-                <th>所在地</th>
-                <td>〒000-0000<br> 東京都中央区銀座1丁目1番1号</td>
+                <th>詳細プロフィール</th>
+                <td><a href="https://www.clear-lake.net/">https://www.clear-lake.net/</a></td>
               </tr>
               <tr>
-                <th>設立</th>
-                <td>2021年1月1日</td>
-              </tr>
-              <tr>
-                <th>代表者名</th>
-                <td>山田 太郎</td>
-              </tr>
-              <tr>
-                <th>資本金</th>
-                <td>1,000,000円</td>
+                <th>サイト設立日</th>
+                <td>2025年4月1日</td>
               </tr>
             </tbody>
           </table>
@@ -41,15 +33,15 @@
 
 <script setup lang="ts">
 definePageMeta({
-  title: '会社概要 | Jamstack構成のWebサイト制作',
-  description: '当社の企業情報や理念をご紹介します。Jamstack技術を駆使した高性能なWebサイト制作でビジネスの成功を支援します。',
+  title: '運営情報 | 透明な湖',
+  description: '運営情報をご紹介します。世界中の湖を紹介する総合サイト。海外旅行の観光スポットの参考になれば幸いです。',
 });
 
 const route = useRoute();
 
 const breadcrumbsArray = [
   {
-    name: '会社情報',
+    name: '運営情報',
     path: route.path
   }
 ]

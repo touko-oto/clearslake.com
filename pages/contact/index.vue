@@ -45,8 +45,8 @@
 
 <script setup>
 definePageMeta({
-  title: 'お問い合わせ | Jamstack構成のWebサイト制作',
-  description: 'ご質問やご相談はこちらからお問い合わせください。ビジネスを支える最適なWebサイト制作をご提案いたします。',
+  title: 'お問い合わせ | 透明な湖',
+  description: 'ご質問やご相談はこちらからお問い合わせください。提案いただいた内容を検討し追加いたします。',
 });
 
 const route = useRoute();

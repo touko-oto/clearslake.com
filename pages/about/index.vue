@@ -7,7 +7,7 @@
         <div class="content-column-left">
           <small class="ml-[0.2em]">私たちについて</small>
           <h2>About us</h2>
-          <p>培ったデザインと技術で<br class="br-sp">SEOに強いWebサイトを実現します。</p>
+          <p>卓越したITスキル<br class="br-sp">世界中の湖の関する情報を収集しまとめます。</p>
         </div>
         <div class="content-column-right">
           <img src="~/assets/images/about-us.jpg" alt="About us" />
@@ -19,8 +19,8 @@
 
 <script setup lang="ts">
 definePageMeta({
-  title: '会社概要 | Jamstack構成のWebサイト制作',
-  description: '当社の企業情報や理念をご紹介します。Jamstack技術を駆使した高性能なWebサイト制作でビジネスの成功を支援します。',
+  title: '私たちについて | 透明な湖',
+  description: '私たちについての情報をご紹介します。世界中の湖を紹介する総合サイト。海外旅行の観光スポットの参考になれば幸いです。',
 });
 
 const route = useRoute();

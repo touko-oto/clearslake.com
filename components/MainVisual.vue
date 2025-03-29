@@ -2,9 +2,9 @@
   <section class="relative w-full h-[85vh] overflow-hidden flex justify-start bg-gray-100 py-16 px-0">
     <div class="mv-area relative z-10 text-left max-w-1280 w-full mx-auto flex flex-col">
       <div class="max-md:text-3xl text-5xl font-bold mb-4 leading-tight">
-        モダンなウェブ体験を<br>手軽に実現</div>
+        世界中の湖に関する情報を<br>手軽に閲覧</div>
       <p class="text-lg mb-8 leading-relaxed ">
-        Jamstack構成 + Nuxt3 + microCMSで<br class="br-sp">圧倒的パフォーマンスを実現
+        最新技術（Jamstack構成 + Nuxt3 + microCMS）で<br class="br-sp">本サイトを構築
       </p>
       <PrimaryButton to="/contact" label="お問い合わせする" />
     </div>

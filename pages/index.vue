@@ -9,7 +9,7 @@
         <div class="content-column-left">
           <small class="ml-[0.2em]">私たちについて</small>
           <h2>About us</h2>
-          <p>培ったデザインと技術で<br class="br-sp">SEOに強いWebサイトを実現します。</p>
+          <p>世界中の湖を紹介するサイト。<br class="br-sp">観光スポットの参考になれば幸いです。</p>
           <SecondaryButton to="/about" label="もっと見る" class="justify-start mr-auto" />
         </div>
         <div class="content-column-right">
@@ -21,9 +21,9 @@
     <!-- 事業内容セクション -->
     <section class="services-section px-0 py-16 md:py-32">
       <div class="content">
-        <small>サービス</small>
-        <h2>Services</h2>
-        <p>高速・セキュアなJamstack構成のサイトを提供します。</p>
+        <small>湖</small>
+        <h2>Lake</h2>
+        <p>世界中の湖の場所と写真を提供します。</p>
         <div class="services-grid">
           <div class="service-card" v-for="(service, index) in services" :key="index">
             <div class="service-text">
@@ -62,31 +62,23 @@
     <section class="company-info-section py-16 md:py-32">
       <div class="content columns">
         <div class="content-column-left">
-          <small class="ml-[0.2em]">会社情報</small>
-          <h2>COMPANY</h2>
+          <small class="ml-[0.2em]">運営者</small>
+          <h2>Profile</h2>
         </div>
         <div class="content-column-right">
           <table>
             <tbody>
               <tr>
-                <th>会社名</th>
-                <td>ダミー株式会社</td>
+                <th>名前</th>
+                <td>透湖</td>
               </tr>
               <tr>
-                <th>所在地</th>
-                <td>〒000-0000<br> 東京都中央区銀座1丁目1番1号</td>
+                <th>詳細プロフィール</th>
+                <td><a href="https://www.clear-lake.net/">https://www.clear-lake.net/</a></td>
               </tr>
               <tr>
-                <th>設立</th>
-                <td>2021年1月1日</td>
-              </tr>
-              <tr>
-                <th>代表者名</th>
-                <td>山田 太郎</td>
-              </tr>
-              <tr>
-                <th>資本金</th>
-                <td>1,000,000円</td>
+                <th>サイト設立日</th>
+                <td>2025年4月1日</td>
               </tr>
             </tbody>
           </table>
@@ -104,7 +96,7 @@
         </div>
         <div class="content-column-right">
           <p>
-            Webサイト制作について、<br class="br-sp">お気軽にご相談ください。
+            追加してほしい湖について、<br class="br-sp">お気軽にご相談ください。
           </p>
           <div>
             <PrimaryButton to="/contact" label="お問い合わせする" />
@@ -119,8 +111,8 @@
 <script setup lang="ts">
 definePageMeta({
   layout: 'top',
-  title: 'Jamstackで構築する次世代の高速Webサイト',
-  description: '高速表示とセキュアな環境を実現するJamstack構成のWebサイト制作サービス。SEO対策で集客力アップに貢献します。',
+  title: '透明な湖',
+  description: '世界中の湖を紹介する総合サイト。旅行時の観光スポットの参考になれば幸いです。',
 });
 type Service = {
   title: string;
@@ -128,12 +120,12 @@ type Service = {
 };
 
 const services: Service[] = [
-  { title: 'サーバー代0円', description: '' },
-  { title: '超高速表示', description: '' },
-  { title: '内部SEO最適化', description: '' },
-  { title: 'アクセス負荷対応', description: '' },
-  { title: '高セキュリティ', description: '' },
-  { title: 'ヘッドレスCMS', description: '' }
+  { title: 'ユーラシア大陸', description: 'アジア圏、オセアニア、ヨーロッパ' },
+  { title: 'アフリカ大陸', description: 'エジプト、ナイジェリア、スーダンなど' },
+  { title: '北アメリカ大陸', description: 'カナダ、アメリカ合衆国、メキシコなど' },
+  { title: '南アメリカ大陸', description: 'アルゼンチン、ブラジル、チリなど' },
+  { title: 'オーストラリア大陸', description: 'オーストラリア' },
+  { title: '日本', description: '日本国内' }
 ];
 
 type News = {

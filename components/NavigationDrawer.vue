@@ -4,7 +4,7 @@
       <li><nuxt-link to="/about" @click="closeMenu">私たちについて</nuxt-link></li>
       <li><nuxt-link to="/service" @click="closeMenu">サービス</nuxt-link></li>
       <li><nuxt-link to="/news" @click="closeMenu">お知らせ</nuxt-link></li>
-      <li><nuxt-link to="/info" @click="closeMenu">会社情報</nuxt-link></li>
+      <li><nuxt-link to="/info" @click="closeMenu">運営情報</nuxt-link></li>
     </ul>
     <PrimaryButton to="/contact" label="お問い合わせ" :showIcon="false" @click="closeMenu" />
   </div>

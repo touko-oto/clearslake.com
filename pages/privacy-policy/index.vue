@@ -9,7 +9,7 @@
 
         <div class="policy-content">
           <p>
-            ダミー株式会社は、お客様の個人情報を適切に取り扱うことをお約束します。
+            「透明な湖」は、お客様の個人情報を適切に取り扱うことをお約束します。
           </p>
 
           <div class="section-title">個人情報の利用目的</div>
@@ -41,7 +41,7 @@
 
           <div class="section-title">お問い合わせ</div>
           <p>
-            プライバシーポリシーに関するお問い合わせは、info@example.co.jpまでご連絡ください。
+            プライバシーポリシーに関するお問い合わせは、info@clearslake.comまでご連絡ください。
           </p>
         </div>
       </div>
@@ -51,7 +51,7 @@
 
 <script setup lang="ts">
 definePageMeta({
-  title: 'プライバシーポリシー | Jamstack構成のWebサイト制作',
+  title: 'プライバシーポリシー | 透明な湖',
   description: '当社のプライバシーポリシーをご確認ください。お客様の個人情報を適切に取り扱い、保護するための方針を明示しています。',
 });
 

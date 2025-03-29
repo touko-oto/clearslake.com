@@ -23,8 +23,8 @@
 
 <script setup lang="ts">
 definePageMeta({
-  title: 'お知らせ一覧 | Jamstack構成のWebサイト制作',
-  description: '最新のお知らせやニュースを掲載しています。サービスに関する最新情報をご確認ください。',
+  title: 'お知らせ一覧 | 透明な湖',
+  description: '最新のお知らせやニュースを掲載しています。湖やサイトに関する最新情報をご確認ください。',
 });
 
 const route = useRoute();
