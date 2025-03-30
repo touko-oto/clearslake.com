@@ -22,7 +22,7 @@ const updateHead = () => {
       { name: 'description', content: `${description.value}` },
       { property: 'og:title', content: `${title.value}` },
       { property: 'og:description', content: `${description.value}` },
-      { property: 'og:image', content: '/ogp.jpg' },
+      { property: 'og:image', content: '/ogp.png' },
       { name: 'twitter:card', content: 'summary_large_image' }
     ],
     link: [
