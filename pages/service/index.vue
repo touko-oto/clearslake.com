@@ -3,27 +3,30 @@
     <Breadcrumb :breadcrumbsArray="breadcrumbsArray" />
 
     <section class="services-section">
-      <div class="content">
-        <small>湖</small>
-        <h2>Lake</h2>
-        <p>世界中の湖の場所と写真を提供します。</p>
-        <div class="services-grid">
-          <div class="service-card" v-for="(service, index) in services" :key="index">
-            <div class="service-text">
-              <div class="service-number">{{ index < 10 ? '0' + (index + 1) : index + 1 }}</div>
-                  <div class="service-title">{{ service.title }}</div>
-                  <p class="service-description">{{ service.description }}</p>
-              </div>
-            </div>
-          </div>
+      <div class="content service-content">
+        <div class="service-header">
+          <small>湖</small>
+          <h1>Lake</h1>
         </div>
+        <ul v-if="lakeList && lakeList.length" class="lake-list">
+          <li v-for="lake in lakeList" :key="lake.id" class="lake-item">
+            <NuxtLink :to="`/service/${lake.id}`" class="lake-link">
+              <div class="lake-date">{{ formatDate(lake.publishedAt) }}</div>
+              <div class="lake-continent">{{ lake.continent.name }}</div>
+              <div class="lake-area">{{ lake.area.name }}</div>
+              <div class="lake-country">{{ lake.country.name }}</div>
+              <div class="lake-description">{{ lake.title }}</div>
+            </NuxtLink>
+          </li>
+        </ul>
+      </div>
     </section>
   </div>
 </template>
 
 <script setup lang="ts">
 definePageMeta({
-  title: '湖 | 透明な湖',
+  title: '湖一覧 | 透明な湖',
   description: '世界中の湖を紹介するサイト。観光スポットの参考になれば幸いです。',
 });
 
@@ -31,25 +34,49 @@ const route = useRoute();
 
 const breadcrumbsArray = [
   {
-    name: '湖',
+    name: '湖一覧',
     path: route.path
   }
 ]
 
-type Service = {
+type Lake = {
+  id: string;
+  publishedAt: string;
   title: string;
-  description: string;
+  continent: {
+    id: string;
+    name: string
+  };
+  area: {
+    id: string;
+    name: string
+  };
+  country: {
+    id: string;
+    name: string
+  };
 };
 
-const services: Service[] = [
-  { title: 'ユーラシア大陸', description: 'アジア圏、オセアニア、ヨーロッパ' },
-  { title: 'アフリカ大陸', description: 'エジプト、ナイジェリア、スーダンなど' },
-  { title: '北アメリカ大陸', description: 'カナダ、アメリカ合衆国、メキシコなど' },
-  { title: '南アメリカ大陸', description: 'アルゼンチン、ブラジル、チリなど' },
-  { title: 'オーストラリア大陸', description: 'オーストラリア' },
-  { title: '日本', description: '日本国内' }
-];
+// 日付フォーマット関数を作成
+function formatDate(dateString: string): string {
+  const date = new Date(dateString);
+  return date.toLocaleDateString();
+}
+
+const { data: lakeList } = await useAsyncData('lakeList', async () => {
+  const { data } = await useMicroCMSGetList<Lake>({
+    endpoint: 'lake',
+    queries: { fields: ['id', 'publishedAt', 'title', 'continent', 'area', 'country' ] },
+  });
+
+  return data.value?.contents || [];
+});
 </script>
 
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.servise-section .servise-content {
+  gap: 0;
+  flex-direction: column;
+}
+</style>
