@@ -7,7 +7,7 @@
         <div class="content-column-left">
           <small class="ml-[0.2em]">私たちについて</small>
           <h2>About us</h2>
-          <p>卓越したITスキル<br class="br-sp">世界中の湖の関する情報を収集しまとめます。</p>
+          <p>卓越したITスキルで<br class="br-sp">世界中の湖の関する情報を収集しまとめます。</p>
         </div>
         <div class="content-column-right">
           <img src="~/assets/images/about-us.jpg" alt="About us" />

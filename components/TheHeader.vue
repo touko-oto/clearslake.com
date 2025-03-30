@@ -10,7 +10,7 @@
       <nav class="pc-menu">
         <ul>
           <li><nuxt-link to="/about">私たちについて</nuxt-link></li>
-          <li><nuxt-link to="/service">サービス</nuxt-link></li>
+          <li><nuxt-link to="/service">湖</nuxt-link></li>
           <li><nuxt-link to="/news">お知らせ</nuxt-link></li>
           <li><nuxt-link to="/info">運営情報</nuxt-link></li>
         </ul>
